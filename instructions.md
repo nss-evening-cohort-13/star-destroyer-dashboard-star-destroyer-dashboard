@@ -17,15 +17,51 @@ You will be utilizing all of the skills and concepts that you've learned up to t
 # Mentor
 Abbey
 
-## Description
-### Week 1:
-Your team has been assigned to the Imperial I-class Star Destroyer, Devastator. Upon arriving from the Royal Imperial Academy you are to begin work on a systems dashboard that will include Personnel, Weapons, Planetary Sectors, Planetary Systems and a database of Enemies. Authenticated operators will be able to perform full CRUD on each of these modules, and Galactic Empire branding will be evident on all view screens. Note that weapons systems will include complement vehicles such as TIE line starfighters for ship to ship combat, AT-AT & AT-ST vehicles for planetary ground assaults, as well as turbolaser batteries and ion cannons for planetary bombardments. Long live the Empire!
 
-### Week 2:
-Lord Vader was most displeased with the lack of progress from the original team, and they have been dispatched. Your team will depart Ryloth immediately and join the Devastator in the Abrion sector, more specifically the Rishi system. You will first complete the tasks assigned to the first team if need be, and then you will add a targeting system to the dashboard. This system will identify enemy targets within Planetary Systems, and assign Personnel to Weapons systems for strikes against those Enemies via missions. Failure will result in termination. Long live the Empire!
+## Project Requirements
+* Clean code - single responsibility principle
+* ES6 Modules bundled with webpack
+* No errors - linters should be clean
+* Jquery for any DOM manipulation (selectors, modifying css classes, events)
+* SASS and Bootstrap for styling
+* Completely planned out - before each section you should be making new cards before you code.  You should have wireframes and an ERD
 
+### Planning and Setup
+For planning and setup, your team will need to divide and conquer. All of these items will need to be completed and reviewed by noon on Saturday.
+
+- Create an ERD and add to Readme
+- Create Wireframes on Figma and add to Readme
+
+#### Setup:
+- Create a setup branch and setup webpack (make a ticket for this first)
+  - Issue Ticket Template
+  - Pull request Template
+  - Set up readme
+  
+- Create 2 branches: `Main` and `Development`
+  - Protect the `Main` branch from merging (DO NOT MERGE TO MAIN UNTIL APPROVAL FROM YOUR MENTOR IS OBTAINED)
+  - All development should be done on the `Development` branch
+  - When a milestone is completed, make a PR against the `Main` branch for your mentor to review.
+  - DO NOT move on to another milestone until everyone on your team is completed with the milestone AND you get approval from your mentor.
+  
+- Create a new firebase project and enable google authentication
+  - Share API keys with team (DO NOT PUSH TO GITHUB)
+  - One person run deploys
+___
+
+### Expectations
+- Break each section below into milestones
+- Deploy each milestone
+- Deployed URL on Readme
+- Create a PR against the `Main` branch with:
+  - The tickets completed that sprint
+  - Explanation of what was completed in the sprint
 
 ## Week 1:
+
+## Description
+Your team has been assigned to the Imperial I-class Star Destroyer, Devastator. Upon arriving from the Royal Imperial Academy you are to begin work on a systems dashboard that will include Personnel, Weapons, Planetary Sectors, Planetary Systems and a database of Enemies. Authenticated operators will be able to perform full CRUD on each of these modules, and Galactic Empire branding will be evident on all view screens. Note that weapons systems will include complement vehicles such as TIE line starfighters for ship to ship combat, AT-AT & AT-ST vehicles for planetary ground assaults, as well as turbolaser batteries and ion cannons for planetary bombardments. Long live the Empire!
+
 ### Week 1 Requirements:
 * Authenticate to perform any actions (CUD)
 * Personnel
@@ -75,6 +111,10 @@ Lord Vader was most displeased with the lack of progress from the original team,
 * As a user, I should be able to delete a Planetary System.
 
 ## Week 2
+
+### Description:
+Lord Vader was most displeased with the lack of progress from the original team, and they have been dispatched. Your team will depart Ryloth immediately and join the Devastator in the Abrion sector, more specifically the Rishi system. You will first complete the tasks assigned to the first team if need be, and then you will add a targeting system to the dashboard. This system will identify enemy targets within Planetary Systems, and assign Personnel to Weapons systems for strikes against those Enemies via missions. Failure will result in termination. Long live the Empire!
+
 ### Week 2 Requirements:
 * Missions
 * Use Weapons on Enemies in Planetary Systems/Sectors
