@@ -67,7 +67,7 @@ Your team has been assigned to the Imperial I-class Star Destroyer, Devastator. 
 * Personnel
 * Weapons
 * Sectors
-* Enemies (Ships, People, Organizations, Planetary systems)
+* Enemies (Ships, People, Organizations, Planetary Sectors)
 * Galactic Empire branding
 
 **Stretch goal:** Planetary Systems
