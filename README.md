@@ -17,9 +17,7 @@ Bootstrap, Firebase, axios
 
 ## Figma
 
-[https://www.figma.com/file/M02Fm31UO1mWNuRN4hfL7r/Star-Destroyer-Dashboard?node-id=0%3A1](https://www.figma.com/file/M02Fm31UO1mWNuRN4hfL7r/Star-Destroyer-Dashboard?node-id=0%3A1
-
-)
+[https://www.figma.com/file/M02Fm31UO1mWNuRN4hfL7r/Star-Destroyer-Dashboard?node-id=0%3A1](https://www.figma.com/file/M02Fm31UO1mWNuRN4hfL7r/Star-Destroyer-Dashboard?node-id=0%3A1)
 ## URL
 
 n/a
