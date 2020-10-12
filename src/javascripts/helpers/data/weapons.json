@@ -1,0 +1,33 @@
+{
+    "-MJOPMh6PGvjfnuwWHRd" : {
+      "firebaseKey" : "-MJOPMh6PGvjfnuwWHRd",
+      "image" : "https://vignette.wikia.nocookie.net/starwars/images/c/c9/ATAT-SWFB.jpg/revision/latest?cb=20170825050424",
+      "name" : "AT-AT",
+      "vehicle" : true
+    },
+    "-MJOT_EHbKzDN04v137n" : {
+      "firebaseKey" : "-MJOT_EHbKzDN04v137n",
+      "image" : "https://vignette.wikia.nocookie.net/starwars/images/9/9f/DH-17_Blaster_DICE.png/revision/latest?cb=20151106045937",
+      "name" : "Blaster Pistol",
+      "vehicle" : false
+    },
+    "-MJOZLk9BujT944TVN1j" : {
+      "-MJOZNuUXQihyCIikIWf" : {
+        "firebaseKey" : "-MJOT_EHbKzDN04v137n",
+        "image" : "https://images-na.ssl-images-amazon.com/images/I/41506V73oML._AC_SL1000_.jpg",
+        "name" : "Blue Light Saber",
+        "vehicle" : false
+      },
+      "firebaseKey" : "-MJOZLk9BujT944TVN1j",
+      "image" : "https://images-na.ssl-images-amazon.com/images/I/41506V73oML._AC_SL1000_.jpg",
+      "name" : "Blue Light Saber",
+      "vehicle" : false
+    },
+    "-MJOZu_F-LRNKRPFL-5i" : {
+      "firebaseKey" : "-MJOZu_F-LRNKRPFL-5i",
+      "image" : "https://vignette.wikia.nocookie.net/starwars/images/a/ae/Landos_Millennium_Falcon.png/revision/latest?cb=20190613053952",
+      "name" : "Millenium Falcon",
+      "vehicle" : true
+    }
+  }
+  
