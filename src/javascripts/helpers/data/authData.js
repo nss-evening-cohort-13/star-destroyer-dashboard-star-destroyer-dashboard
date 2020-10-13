@@ -1,17 +1,20 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import auth from '../../components/auth/auth';
+import userData from './userData';
+import myNavbar from '../../components/myNavbar/myNavbar';
+import viewHelper from '../viewHelpers';
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      // person is logged in
-      $('#auth').addClass('hide');
-      $('#p-dashboard').removeClass('hide');
-      $('#navbar-logout-button').removeClass('hide');
+      const currentUser = userData.setCurrentUser(user);
+      myNavbar.myNavbar(currentUser);
+      viewHelper.viewHelper('personnel-link');
+      $('#auth').html('');
     } else {
-      $('#navbar-logout-button').addClass('hide');
-      $('#auth').removeClass('hide');
-      $('#p-dashboard').addClass('hide');
+      auth.loginButton();
+      $('#nav').html('');
     }
   });
 };
