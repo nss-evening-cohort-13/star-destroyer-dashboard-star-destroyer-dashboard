@@ -14,7 +14,7 @@ const checkLoginStatus = () => {
       $('#auth').html('');
     } else {
       auth.loginButton();
-      $('#nav').html('');
+      $('#nav').append();
     }
   });
 };

@@ -38,4 +38,19 @@ body {
   text-align: center;
 }
 
+#app {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 
+.logoutCards {
+  padding-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.personnel {
+  padding-top: 30px;
+}
