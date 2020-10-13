@@ -1,9 +1,9 @@
 import personnelData from '../../helpers/data/personnelData';
 import card from '../cards/personnelCards';
 
-const personnelView = (object) => {
+const personnelView = () => {
   $('#app').html('');
-  personnelData.getPersonnel(object).then((response) => {
+  personnelData.getPersonnel().then((response) => {
     if (response.length) {
       response.forEach((item) => {
         $('#app').append(card.personnelCard(item));
