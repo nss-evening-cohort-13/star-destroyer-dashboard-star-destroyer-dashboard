@@ -15,7 +15,7 @@ const loginButton = () => {
     </button>
   </div>`;
 
-  $('#auth').html(domString);
+  $('#app').html(domString);
   $('#google-auth').on('click', signMeIn);
 };
 
