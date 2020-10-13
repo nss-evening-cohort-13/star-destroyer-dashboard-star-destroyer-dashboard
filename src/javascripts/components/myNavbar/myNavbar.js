@@ -4,7 +4,9 @@ import 'firebase/auth';
 const logoutEvent = () => {
   $('#navbar-logout-button').on('click', (e) => {
     e.preventDefault();
+    window.sessionStorage.removeItem('ua');
     firebase.auth().signOut();
+    window.location.href = '/';
   });
 };
 
