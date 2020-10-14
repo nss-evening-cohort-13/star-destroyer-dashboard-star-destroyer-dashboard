@@ -21,7 +21,6 @@ const getPersonnel = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-
 const getSinglePersonnel = (personnelFirebaseKey) => new Promise((resolve, reject) => {
   axios
     .get(
@@ -41,9 +40,10 @@ const addPersonnel = (data) => axios.post(`${baseUrl}/personnel.json`, data)
     axios.patch(`${baseUrl}/personnel/${response.data.name}.json`, update);
   }).catch((error) => console.warn(error));
 
-export default { deletePersonnel, 
-                getPersonnel, 
-                addPersonnel,
-                updatePersonnel,
-                getSinglePersonnel
-               };
+export default {
+  deletePersonnel,
+  getPersonnel,
+  addPersonnel,
+  updatePersonnel,
+  getSinglePersonnel
+};

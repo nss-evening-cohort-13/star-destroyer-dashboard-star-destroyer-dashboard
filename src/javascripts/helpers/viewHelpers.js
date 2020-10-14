@@ -1,7 +1,6 @@
 import views from '../components/views/personnelView';
 import updatePersonnelView from '../components/views/updatePersonnelView';
 
-
 const viewHelper = (id, object, arg) => {
   $('#app').html('');
 

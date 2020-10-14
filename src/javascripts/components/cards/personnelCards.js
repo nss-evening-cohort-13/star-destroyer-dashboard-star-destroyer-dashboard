@@ -5,7 +5,7 @@ const personnelCard = (object) => {
   <img src="${object.image}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title" id="name">${object.name}</h5>
-    <a href="#" id="${object.firebaseKey}" class="btn btn-primary">Edit</a>
+    <a href="#" id="${object.firebaseKey}" class="btn btn-primary edit-personnel">Edit</a>
     <a id="delete|${object.firebaseKey}" href="#" class="delete btn btn-danger">Delete</a>
   </div>
 </div>

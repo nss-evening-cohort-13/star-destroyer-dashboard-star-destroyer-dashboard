@@ -46,7 +46,7 @@ const updatePersonnelForm = (personnelObj) => {
         .updatePersonnel(personnelObj.firebaseKey, data)
         .then(() => {
           $('#success-message').html(
-            '<div class="alert alert-success" role="alert">Personnel has been ubdated!</div>'
+            '<div class="alert alert-success" role="alert">Personnel has been updated!</div>'
           );
 
           setTimeout(() => {
