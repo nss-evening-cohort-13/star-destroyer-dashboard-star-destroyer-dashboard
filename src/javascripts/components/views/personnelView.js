@@ -11,6 +11,14 @@ const personnelView = () => {
     } else {
       $('#app').append('<h2> NO CARDS!</h2>');
     }
+    $('.delete').on('click', (e) => {
+      e.stopImmediatePropagation();
+      /* eslint-disable */
+      const [type, id] = e.currentTarget.id.split('|');
+      /* eslint-enable */
+      $(`#personnel-${id}`).remove();
+      personnelData.deletePersonnel(id);
+    });
   });
 };
 
