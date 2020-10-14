@@ -14,16 +14,15 @@ const viewHelper = (id, object, arg) => {
   }
 };
 
-const viewListener = (view) => {
+const viewListener = (view, user) => {
   viewHelper(view);
   $('body').on('click', 'li.nav-item', (e) => {
     viewHelper(e.currentTarget.id);
   });
 
   $('body').on('click', '.edit-personnel', (e) => {
-    console.warn('Button Clicked');
     const personnelFirebaseKey = e.currentTarget.id;
-    viewHelper('update-personnel-link', personnelFirebaseKey);
+    viewHelper('update-personnel-link', user, personnelFirebaseKey);
   });
 };
 
