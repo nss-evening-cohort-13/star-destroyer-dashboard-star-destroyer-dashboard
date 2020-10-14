@@ -1,13 +1,13 @@
 import views from '../components/views/personnelView';
 
-const viewHelper = (id, object) => {
+const viewHelper = (id) => {
   $('#app').html('');
 
   switch (id) {
     case 'personnel-link':
-      return views.personnelView(object);
+      return views.personnelView();
     default:
-      return console.warn('nothing clicked');
+      return console.warn(id, 'page');
   }
 };
 
