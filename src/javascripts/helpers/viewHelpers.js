@@ -1,6 +1,7 @@
 import views from '../components/views/personnelView';
 import updatePersonnelView from '../components/views/updatePersonnelView';
 
+
 const viewHelper = (id, object, arg) => {
   $('#app').html('');
 
@@ -10,7 +11,7 @@ const viewHelper = (id, object, arg) => {
     case 'update-personnel-link':
       return updatePersonnelView.updatePersonnelView(arg);
     default:
-      return console.warn('nothing clicked');
+      return console.warn(id, 'page');
   }
 };
 

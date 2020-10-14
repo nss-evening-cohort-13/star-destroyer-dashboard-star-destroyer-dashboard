@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import viewHelpers from '../../helpers/viewHelpers';
 
 const logoutEvent = () => {
   $('#navbar-logout-button').on('click', (e) => {
@@ -48,6 +49,18 @@ const myNavbar = (user) => {
   </nav>`
   );
   logoutEvent();
+
+  $('body').on('click', '.nav-item', (e) => {
+    e.stopImmediatePropagation();
+    viewHelpers.viewHelper(e.currentTarget.id);
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach((navItem) => {
+      if (navItem.classList.contains('selected')) {
+        $(navItem).removeClass('selected');
+      }
+    });
+    $(`#${e.currentTarget.id}`).addClass('selected');
+  });
 };
 
 export default { myNavbar };
