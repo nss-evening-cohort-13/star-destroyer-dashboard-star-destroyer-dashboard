@@ -3,14 +3,14 @@ import 'firebase/auth';
 import auth from '../../components/auth/auth';
 import userData from './userData';
 import myNavbar from '../../components/myNavbar/myNavbar';
-import viewHelper from '../viewHelpers';
+import viewHelpers from '../viewHelpers';
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       const currentUser = userData.setCurrentUser(user);
       myNavbar.myNavbar(currentUser);
-      viewHelper.viewHelper('personnel-link');
+      viewHelpers.viewListener('personnel-link');
       $('#auth').html('');
       $('#personnel-link').addClass('selected');
     } else {
