@@ -27,8 +27,6 @@ const checkIfUserExistsInFirebase = (user) => {
             .patch(`${baseUrl}/users/${response.data.name}.json`, update)
             .catch((error) => console.warn(error));
         });
-      } else {
-        console.warn('User Already Exists');
       }
       window.sessionStorage.setItem('ua', true);
     })

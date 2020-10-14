@@ -35,5 +35,15 @@ const getSinglePersonnel = (personnelFirebaseKey) => new Promise((resolve, rejec
 
 const updatePersonnel = (firebaseKey, personnelObject) => axios.patch(`${baseUrl}/personnel/${firebaseKey}.json`, personnelObject);
 
-export default { getPersonnel, updatePersonnel, getSinglePersonnel, deletePersonnel };
+const addPersonnel = (data) => axios.post(`${baseUrl}/personnel.json`, data)
+  .then((response) => {
+    const update = { firebaseKey: response.data.name };
+    axios.patch(`${baseUrl}/personnel/${response.data.name}.json`, update);
+  }).catch((error) => console.warn(error));
 
+export default { deletePersonnel, 
+                getPersonnel, 
+                addPersonnel,
+                updatePersonnel,
+                getSinglePersonnel
+               };
