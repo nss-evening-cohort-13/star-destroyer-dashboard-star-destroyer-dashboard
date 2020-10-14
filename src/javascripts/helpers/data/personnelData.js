@@ -3,6 +3,8 @@ import apiKeys from '../apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
+const deletePersonnel = (firebaseKey) => axios.delete(`${baseUrl}/personnel/${firebaseKey}.json`);
+
 const getPersonnel = () => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/personnel.json`).then((response) => {
     const personnel = response.data;
@@ -22,4 +24,4 @@ const addPersonnel = (data) => axios.post(`${baseUrl}/personnel.json`, data)
     axios.patch(`${baseUrl}/personnel/${response.data.name}.json`, update);
   }).catch((error) => console.warn(error));
 
-export default { getPersonnel, addPersonnel };
+export default { deletePersonnel, getPersonnel, addPersonnel };

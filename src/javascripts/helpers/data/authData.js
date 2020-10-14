@@ -12,6 +12,7 @@ const checkLoginStatus = () => {
       myNavbar.myNavbar(currentUser);
       viewHelper.viewHelper('personnel-link');
       $('#auth').html('');
+      $('#personnel-link').addClass('selected');
     } else {
       auth.loginButton();
     }

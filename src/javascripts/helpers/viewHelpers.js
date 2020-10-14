@@ -7,7 +7,7 @@ const viewHelper = (id) => {
     case 'personnel-link':
       return views.personnelView();
     default:
-      return console.warn('nothing clicked');
+      return console.warn(id, 'page');
   }
 };
 

@@ -1,5 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import './components';
+@import './globals/';
 
 body {
   background-color: black;
@@ -53,4 +55,8 @@ body {
 
 .personnel {
   padding-top: 30px;
+}
+
+.selected {
+  font-weight: bold;
 }
