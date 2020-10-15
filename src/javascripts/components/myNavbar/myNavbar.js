@@ -1,11 +1,13 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import globals from '../../helpers/data/globals';
 import viewHelpers from '../../helpers/viewHelpers';
 
 const logoutEvent = () => {
   $('#navbar-logout-button').on('click', (e) => {
     e.preventDefault();
     window.sessionStorage.removeItem('ua');
+    globals.clearUser();
     firebase.auth().signOut();
     window.location.href = '/';
   });
