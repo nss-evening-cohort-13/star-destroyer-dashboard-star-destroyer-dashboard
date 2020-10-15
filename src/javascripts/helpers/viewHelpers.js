@@ -1,6 +1,8 @@
 import views from '../components/views/personnelView';
+import loggedOutView from '../components/views/loggedOutPersonnelView';
 import updatePersonnelView from '../components/views/updatePersonnelView';
 
+/* Logged On Resources */
 const viewHelper = (id, object, arg) => {
   $('#app').html('');
 
@@ -19,11 +21,32 @@ const viewListener = (view, user) => {
   $('body').on('click', 'li.nav-item', (e) => {
     viewHelper(e.currentTarget.id);
   });
-
   $('body').on('click', '.edit-personnel', (e) => {
     const personnelFirebaseKey = e.currentTarget.id;
     viewHelper('update-personnel-link', user, personnelFirebaseKey);
   });
 };
 
-export default { viewHelper, viewListener };
+/* Logged Off Resources */
+const loggedOffViewHelper = (id, object) => {
+  $('#app').html('');
+  switch (id) {
+    case 'personnel-link':
+      return loggedOutView.loggedOutPersonnelView(object);
+    default:
+      return console.warn(id, 'page');
+  }
+};
+const loggedOffViewListener = (view) => {
+  loggedOffViewHelper(view);
+  $('body').on('click', 'li.nav-item', (e) => {
+    loggedOffViewHelper(e.currentTarget.id);
+  });
+};
+
+export default {
+  viewHelper,
+  viewListener,
+  loggedOffViewListener,
+  loggedOffViewHelper
+};
