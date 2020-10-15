@@ -14,8 +14,9 @@ const checkLoginStatus = () => {
       $('#auth').html('');
       $('#personnel-link').addClass('selected');
     } else {
-      myNavbar.myNavbar();
+      myNavbar.myLoggedOffNavbar();
       viewHelpers.loggedOffViewListener('personnel-link');
+      $('#personnel-link').addClass('selected');
       auth.loginButton();
     }
   });
