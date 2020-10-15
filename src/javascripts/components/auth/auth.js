@@ -7,15 +7,40 @@ const signMeIn = () => {
 };
 
 const loginButton = () => {
+  // $('#app').html('');
   const domString = `
-  <div id="auth">
-    <span style="font-size: 9em; color: Red;"><i class="fab fa-empire"></i>
-    <h4>Empire Dasboard</h4>
-    <button id="google-auth" class="btn btn-danger"><i class="fab fa-google"></i></i>oogle Login
+  <nav class="navbar fixed top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Star Destroyer Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-  </div>`;
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item mx-3"  id="personnel-link">
+      <a class="nav-link" href="#">Personnel Dashboard</a>
+    </li>
+    <li class="nav-item mx-3" id="weapons-link">
+      <a class="nav-link" href="#">Weapons Dashboard</a>
+    </li>
+    <li class="nav-item mx-3" id="enemies-link">
+      <a class="nav-link" href="#">Enemies Dashboard</a>
+    </li>
+    <li class="nav-item mx-3" id="sectors-link">
+      <a class="nav-link" href="#">Planetary Sectors Dashboard</a>
+    </li>
+    <li class="nav-item mx-3" id="systems-link">
+      <a class="nav-link" href="#">Planetary Systems Dashboard</a>
+    </li>
+  </ul>
+      
+  <button id="google-auth" class="btn btn-warning btn-lg">
+        <i class="fab fa-google"></i></i>oogle Login
+        </button>
+  </nav>
+`;
 
-  $('#auth').html(domString);
+  $('#nav').html(domString);
   $('#google-auth').on('click', signMeIn);
 };
 
