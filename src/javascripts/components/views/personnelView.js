@@ -20,7 +20,7 @@ const personnelView = () => {
     $('.delete').on('click', (e) => {
       e.stopImmediatePropagation();
       /* eslint-disable */
-      const [type, id] = e.currentTarget.id.split('|');
+      const [type, id] = e.currentTarget.id.split('__');
       /* eslint-enable */
       $(`#personnel-${id}`).remove();
       personnelData.deletePersonnel(id);

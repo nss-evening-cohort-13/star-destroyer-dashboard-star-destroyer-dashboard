@@ -3,13 +3,17 @@ const currentUser = [];
 
 const getUser = () => currentUser;
 
-const setUser = (userId) => {
+const setUser = (user) => {
   if (getUser().length === 0) {
-    currentUser.push(userId);
+    currentUser.push(user);
   } else {
     currentUser.pop();
-    currentUser.push(userId);
+    currentUser.push(user);
   }
+};
+
+const clearUser = () => {
+  currentUser.splice(0, currentUser.length);
 };
 
 const getDashboard = () => currentDashboard;
@@ -26,6 +30,7 @@ const setDashboard = (dashboardId) => {
 export default {
   getUser,
   setUser,
+  clearUser,
   getDashboard,
   setDashboard,
 };
