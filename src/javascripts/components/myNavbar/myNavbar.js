@@ -11,7 +11,7 @@ const logoutEvent = () => {
   });
 };
 
-const myNavbar = (user) => {
+const myNavbar = () => {
   $('#nav').html(
     `<nav id="emireNav" class="navbar navbar-expand-lg navbar-light bg-light">
       <div id="add-button"></div>
@@ -39,9 +39,6 @@ const myNavbar = (user) => {
     </li>
   </ul>
       <ul class="navbar-nav ml-auto">
-        <li class="user-info-nav">
-          Welcome, ${user.name} !
-        </li>
         <li class="nav-item">
           <button class="nav-link btn btn-danger p-2" id="navbar-logout-button">Logout</button>
         </li>
