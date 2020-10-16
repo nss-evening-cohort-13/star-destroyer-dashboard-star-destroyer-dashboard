@@ -19,11 +19,8 @@ const weaponsView = () => {
     }
     $('.delete').on('click', (e) => {
       e.stopImmediatePropagation();
-      /* eslint-disable */
-      const [type, id] = e.currentTarget.id.split('__');
-      /* eslint-enable */
-      $(`#weapons-${id}`).remove();
-      weaponsData.deleteWeapons(id);
+      $(`#weapons-${e.currentTarget.id.split('__')[1]}`).remove();
+      weaponsData.deleteWeapons(e.currentTarget.id.split('__')[1]);
     });
   });
 };

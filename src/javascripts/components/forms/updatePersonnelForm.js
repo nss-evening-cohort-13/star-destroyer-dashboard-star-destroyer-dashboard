@@ -17,17 +17,6 @@ const updatePersonnelForm = (personnelObj) => {
       <button id="update-personnel-btn" type="submit" class="btn btn-info"><i class="fas fa-plus-circle"></i> Update Personnel</button>
     </form>`);
 
-  personnelData.getPersonnel().then((response) => {
-    response.forEach((item) => {
-      $('select').append(
-        `<option value="${item.firebaseKey}" ${
-          personnelObj.firebaseKey === item.firebaseKey
-            ? "selected ='selected'"
-            : ''
-        }>${item.name}</option>`
-      );
-    });
-  });
   $('#update-personnel-btn').on('click', (e) => {
     e.preventDefault();
 
