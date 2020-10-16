@@ -2,6 +2,7 @@ import views from '../components/views/personnelView';
 import updatePersonnelView from '../components/views/updatePersonnelView';
 import updateWeaponsView from '../components/views/updateWeaponsView';
 import weaponsView from '../components/views/weaponsView';
+import sectorView from '../components/views/sectorView';
 
 /* Logged On Resources */
 const viewHelper = (id, object, arg) => {
@@ -16,6 +17,8 @@ const viewHelper = (id, object, arg) => {
       return updateWeaponsView.updateWeaponsView(arg);
     case 'weapons-link':
       return weaponsView.weaponsView(object);
+    case 'sectors-link':
+      return sectorView.sectorView(object);
     default:
       return console.warn(id, 'page');
   }
