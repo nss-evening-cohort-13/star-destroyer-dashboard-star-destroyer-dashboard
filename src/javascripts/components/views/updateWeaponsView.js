@@ -3,7 +3,7 @@ import form from '../forms/updateWeaponsForm';
 
 const updateWeaponsView = (weaponsFirebaseKey) => {
   $('#app').html('<div id="update-weapons-form"></div>');
-  weaponsData.getSingleWeapons(weaponsFirebaseKey).then((response) => {
+  weaponsData.getSingleWeapon(weaponsFirebaseKey).then((response) => {
     form.updateWeaponsForm(response);
   });
 };
