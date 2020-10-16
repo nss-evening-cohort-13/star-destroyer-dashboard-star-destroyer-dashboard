@@ -7,21 +7,22 @@ const getAllWeapons = () => new Promise((resolve, reject) => {
   axios
     .get(`${baseUrl}/weapons.json`)
     .then((response) => {
-      const personnel = response.data;
+      const weapons = response.data;
       const array = [];
-      if (personnel) {
-        Object.keys(personnel).forEach((personnelId) => {
-          array.push(personnel[personnelId]);
+      if (weapons) {
+        Object.keys(weapons).forEach((weaponsId) => {
+          array.push(weapons[weaponsId]);
         });
       }
       resolve(array);
     })
     .catch((error) => reject(error));
 });
-const getSingleWeapon = (personnelFirebaseKey) => new Promise((resolve, reject) => {
+
+const getSingleWeapon = (weaponsFirebaseKey) => new Promise((resolve, reject) => {
   axios
     .get(
-      `${baseUrl}/weapons/${personnelFirebaseKey}.json`
+      `${baseUrl}/weapons/${weaponsFirebaseKey}.json`
     )
     .then((response) => {
       const thisWeapon = response.data;

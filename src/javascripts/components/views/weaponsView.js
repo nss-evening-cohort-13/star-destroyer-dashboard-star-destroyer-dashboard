@@ -26,6 +26,6 @@ const weaponsView = () => {
       weaponsData.deleteWeapons(id);
     });
   });
-}
+};
 
-  export default { weaponsView };
+export default { weaponsView };
