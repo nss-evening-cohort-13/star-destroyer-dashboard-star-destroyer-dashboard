@@ -1,4 +1,4 @@
-import weaponsData from '../../helpers/data/WeaponsData';
+import weaponsData from '../../helpers/data/weaponsData';
 import form from '../forms/updateWeaponsForm';
 
 const updateWeaponsView = (weaponsFirebaseKey) => {

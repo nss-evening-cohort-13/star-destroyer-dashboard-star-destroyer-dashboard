@@ -1,6 +1,7 @@
 import views from '../components/views/personnelView';
 import updatePersonnelView from '../components/views/updatePersonnelView';
 import updateWeaponsView from '../components/views/updateWeaponsView';
+import weaponsView from '../components/views/weaponsView';
 
 /* Logged On Resources */
 const viewHelper = (id, object, arg) => {
@@ -13,6 +14,8 @@ const viewHelper = (id, object, arg) => {
       return updatePersonnelView.updatePersonnelView(arg);
     case 'update-weapons-link':
       return updateWeaponsView.updateWeaponsView(arg);
+    case 'weapons-link':
+      return weaponsView.weaponsView(object);
     default:
       return console.warn(id, 'page');
   }
