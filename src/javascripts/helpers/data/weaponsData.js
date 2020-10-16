@@ -2,9 +2,7 @@ import axios from 'axios';
 import apiKeys from '../apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
-
 const deleteWeapons = (firebaseKey) => axios.delete(`${baseUrl}/weapons/${firebaseKey}.json`);
-
 const getAllWeapons = () => new Promise((resolve, reject) => {
   axios
     .get(`${baseUrl}/weapons.json`)
@@ -38,6 +36,12 @@ const addWeapon = (data) => axios.post(`${baseUrl}/weapons.json`, data)
     axios.patch(`${baseUrl}/weapons/${response.data.name}.json`, update);
   }).catch((error) => console.warn(error));
 
+const updateWeapons = (firebaseKey, weaponsObject) => axios.patch(`${baseUrl}/weapons/${firebaseKey}.json`, weaponsObject);
+
 export default {
-  deleteWeapons, getAllWeapons, getSingleWeapon, addWeapon
+  deleteWeapons,
+  getAllWeapons,
+  getSingleWeapon,
+  updateWeapons,
+  addWeapon
 };
