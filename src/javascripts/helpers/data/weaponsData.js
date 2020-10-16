@@ -32,4 +32,12 @@ const getSingleWeapon = (weaponsFirebaseKey) => new Promise((resolve, reject) =>
     }).catch((error) => reject(error));
 });
 
-export default { deleteWeapons, getAllWeapons, getSingleWeapon };
+const addWeapon = (data) => axios.post(`${baseUrl}/weapons.json`, data)
+  .then((response) => {
+    const update = { firebaseKey: response.data.name };
+    axios.patch(`${baseUrl}/weapons/${response.data.name}.json`, update);
+  }).catch((error) => console.warn(error));
+
+export default {
+  deleteWeapons, getAllWeapons, getSingleWeapon, addWeapon
+};

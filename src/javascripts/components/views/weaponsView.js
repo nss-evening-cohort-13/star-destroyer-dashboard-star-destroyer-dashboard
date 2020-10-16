@@ -1,12 +1,12 @@
 import weaponsData from '../../helpers/data/weaponsData';
 import card from '../cards/weaponsCards';
-import forms from '../forms';
+import weaponsForm from '../forms/weaponsForm';
 
 const weaponsView = () => {
   $('#add-button').html(
-    '<button id="add-weapons" type="button" class="btn btn-dark">Add Weapons +</button>'
+    '<button id="add-weapon" type="button" class="btn btn-dark">Add Weapons +</button>'
   );
-  $('#add-wepons').on('click', forms.weaponsForm);
+  $('#add-weapon').on('click', weaponsForm.weaponForm);
 
   $('#app').html('');
   weaponsData.getAllWeapons().then((response) => {
