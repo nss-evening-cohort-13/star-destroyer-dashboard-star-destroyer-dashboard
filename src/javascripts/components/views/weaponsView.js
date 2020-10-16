@@ -6,7 +6,7 @@ const weaponsView = () => {
   $('#add-button').html(
     '<button id="add-weapons" type="button" class="btn btn-dark">Add Weapons +</button>'
   );
-  $('#add-wepons').on('click', forms.weaponsForm);
+  $('#add-weapons').on('click', forms.weaponsForm);
 
   $('#app').html('');
   weaponsData.getAllWeapons().then((response) => {
