@@ -14,7 +14,7 @@ const sectorView = () => {
     $('.delete').on('click', (e) => {
       e.stopImmediatePropagation();
       $(`#sectors-${e.currentTarget.id.split('__')[1]}`).remove();
-      sectorData.deleteWeapons(e.currentTarget.id.split('__')[1]);
+      sectorData.deleteSector(e.currentTarget.id.split('__')[1]);
     });
   });
 };
