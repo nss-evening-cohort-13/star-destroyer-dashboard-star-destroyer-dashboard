@@ -29,4 +29,12 @@ const getSingleWeapon = (weaponsFirebaseKey) => new Promise((resolve, reject) =>
       resolve(thisWeapon);
     }).catch((error) => reject(error));
 });
-export default { deleteWeapons, getAllWeapons, getSingleWeapon };
+
+const updateWeapons = (firebaseKey, weaponsObject) => axios.patch(`${baseUrl}/weapons/${firebaseKey}.json`, weaponsObject);
+
+export default {
+  deleteWeapons,
+  getAllWeapons,
+  getSingleWeapon,
+  updateWeapons
+};

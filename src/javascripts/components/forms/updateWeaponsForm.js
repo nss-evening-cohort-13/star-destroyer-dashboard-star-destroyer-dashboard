@@ -21,7 +21,7 @@ const updateWeaponsForm = (weaponsObj) => {
       <button id="update-weapons-btn" type="submit" class="btn btn-info"><i class="fas fa-plus-circle"></i> Update Weapons</button>
     </form>`);
 
-  weaponsData.getWeapons().then((response) => {
+  weaponsData.getAllWeapons().then((response) => {
     response.forEach((item) => {
       $('select').append(
         `<option value="${item.firebaseKey}" ${weaponsObj.firebaseKey === item.firebaseKey
@@ -31,7 +31,7 @@ const updateWeaponsForm = (weaponsObj) => {
       );
     });
   });
-  $('#update-weapon-btn').on('click', (e) => {
+  $('#update-weapons-btn').on('click', (e) => {
     e.preventDefault();
 
     const data = {
@@ -46,11 +46,12 @@ const updateWeaponsForm = (weaponsObj) => {
       );
     } else {
       $('#error-message').html('');
+      console.warn(data);
       weaponsData
         .updateWeapons(weaponsObj.firebaseKey, data)
         .then(() => {
           $('#success-message').html(
-            '<div class="alert alert-success" role="alert">Personnel has been updated!</div>'
+            '<div class="alert alert-success" role="alert">Weapon has been updated!</div>'
           );
 
           setTimeout(() => {
