@@ -2,7 +2,9 @@ import axios from 'axios';
 import apiKeys from '../apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
+
 const deleteWeapons = (firebaseKey) => axios.delete(`${baseUrl}/weapons/${firebaseKey}.json`);
+
 const getAllWeapons = () => new Promise((resolve, reject) => {
   axios
     .get(`${baseUrl}/weapons.json`)
