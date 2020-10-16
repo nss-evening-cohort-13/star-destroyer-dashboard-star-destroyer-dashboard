@@ -17,16 +17,6 @@ const updateWeaponsForm = (weaponsObj) => {
       <button id="update-weapons-btn" type="submit" class="btn btn-info"><i class="fas fa-plus-circle"></i> Update Weapons</button>
     </form>`);
 
-  weaponsData.getAllWeapons().then((response) => {
-    response.forEach((item) => {
-      $('select').append(
-        `<option value="${item.firebaseKey}" ${weaponsObj.firebaseKey === item.firebaseKey
-          ? "selected ='selected'"
-          : ''
-        }>${item.name}</option>`
-      );
-    });
-  });
   $('#update-weapons-btn').on('click', (e) => {
     e.preventDefault();
 
