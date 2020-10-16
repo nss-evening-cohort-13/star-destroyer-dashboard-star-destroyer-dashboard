@@ -1,23 +1,23 @@
-import personnelData from '../../helpers/data/personnelData';
+import weaponsData from '../../helpers/data/weaponsData';
 
-const updatePersonnelForm = (personnelObj) => {
-  $('#update-personnel-form').html(`
-    <h2>Update Star Destroyer Personnel</h2>
+const updateWeaponsForm = (weaponsObj) => {
+  $('#update-weapons-form').html(`
+    <h2>Update Star Destroyer Weapons</h2>
     <div id="success-message"></div>
     <form>
       <div id="error-message"></div>
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="p-name" value="${personnelObj.name}" placeholder="Example: Kylo Ren">
+        <input type="text" class="form-control" id="p-name" value="${weaponsObj.name}" placeholder="Example: Kylo Ren">
       </div>
       <div class="form-group"
         <label for="image">Image Url</label>
-        <input type="text" class="form-control" value="${personnelObj.image}" id="p-image" placeholder="Enter image Url">
+        <input type="text" class="form-control" value="${weaponsObj.image}" id="p-image" placeholder="Enter image Url">
       </div>
-      <button id="update-personnel-btn" type="submit" class="btn btn-info"><i class="fas fa-plus-circle"></i> Update Personnel</button>
+      <button id="update-weapons-btn" type="submit" class="btn btn-info"><i class="fas fa-plus-circle"></i> Update Weapons</button>
     </form>`);
 
-  $('#update-personnel-btn').on('click', (e) => {
+  $('#update-weapons-btn').on('click', (e) => {
     e.preventDefault();
 
     const data = {
@@ -31,11 +31,11 @@ const updatePersonnelForm = (personnelObj) => {
       );
     } else {
       $('#error-message').html('');
-      personnelData
-        .updatePersonnel(personnelObj.firebaseKey, data)
+      weaponsData
+        .updateWeapons(weaponsObj.firebaseKey, data)
         .then(() => {
           $('#success-message').html(
-            '<div class="alert alert-success" role="alert">Personnel has been updated!</div>'
+            '<div class="alert alert-success" role="alert">Weapon has been updated!</div>'
           );
 
           setTimeout(() => {
@@ -47,4 +47,4 @@ const updatePersonnelForm = (personnelObj) => {
   });
 };
 
-export default { updatePersonnelForm };
+export default { updateWeaponsForm };

@@ -1,5 +1,7 @@
 import views from '../components/views/personnelView';
 import updatePersonnelView from '../components/views/updatePersonnelView';
+import updateWeaponsView from '../components/views/updateWeaponsView';
+import weaponsView from '../components/views/weaponsView';
 
 /* Logged On Resources */
 const viewHelper = (id, object, arg) => {
@@ -10,6 +12,10 @@ const viewHelper = (id, object, arg) => {
       return views.personnelView(object);
     case 'update-personnel-link':
       return updatePersonnelView.updatePersonnelView(arg);
+    case 'update-weapons-link':
+      return updateWeaponsView.updateWeaponsView(arg);
+    case 'weapons-link':
+      return weaponsView.weaponsView(object);
     default:
       return console.warn(id, 'page');
   }
@@ -23,6 +29,10 @@ const viewListener = (view, user) => {
   $('body').on('click', '.edit-personnel', (e) => {
     const personnelFirebaseKey = e.currentTarget.id;
     viewHelper('update-personnel-link', user, personnelFirebaseKey);
+  });
+  $('body').on('click', '.edit-weapons', (e) => {
+    const personnelFirebaseKey = e.currentTarget.id;
+    viewHelper('update-weapons-link', user, personnelFirebaseKey);
   });
 };
 
