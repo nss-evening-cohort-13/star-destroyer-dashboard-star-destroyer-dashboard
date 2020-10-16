@@ -11,10 +11,6 @@ const updateWeaponsForm = (weaponsObj) => {
         <input type="text" class="form-control" id="p-name" value="${weaponsObj.name}" placeholder="Example: Kylo Ren">
       </div>
       <div class="form-group"
-        <label for="vehicle">Vehicle</label>
-        <input type="text" class="form-control" value="${weaponsObj.vehicle}" id="p-vehicle" placeholder="Enter Vehicle">
-      </div>
-      <div class="form-group"
         <label for="image">Image Url</label>
         <input type="text" class="form-control" value="${weaponsObj.image}" id="p-image" placeholder="Enter image Url">
       </div>
@@ -36,7 +32,6 @@ const updateWeaponsForm = (weaponsObj) => {
 
     const data = {
       name: $('#p-name').val() || false,
-      vehicle: $('#p-vehicle').val() || false,
       image: $('#p-image').val() || false,
     };
 
@@ -46,7 +41,6 @@ const updateWeaponsForm = (weaponsObj) => {
       );
     } else {
       $('#error-message').html('');
-      console.warn(data);
       weaponsData
         .updateWeapons(weaponsObj.firebaseKey, data)
         .then(() => {

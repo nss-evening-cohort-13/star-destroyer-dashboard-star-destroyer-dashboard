@@ -30,11 +30,18 @@ const getSingleWeapon = (weaponsFirebaseKey) => new Promise((resolve, reject) =>
     }).catch((error) => reject(error));
 });
 
+const addWeapon = (data) => axios.post(`${baseUrl}/weapons.json`, data)
+  .then((response) => {
+    const update = { firebaseKey: response.data.name };
+    axios.patch(`${baseUrl}/weapons/${response.data.name}.json`, update);
+  }).catch((error) => console.warn(error));
+
 const updateWeapons = (firebaseKey, weaponsObject) => axios.patch(`${baseUrl}/weapons/${firebaseKey}.json`, weaponsObject);
 
 export default {
   deleteWeapons,
   getAllWeapons,
   getSingleWeapon,
-  updateWeapons
+  updateWeapons,
+  addWeapon
 };
