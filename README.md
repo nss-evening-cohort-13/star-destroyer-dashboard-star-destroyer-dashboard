@@ -5,7 +5,7 @@
 The motivation behind this project is to mock up a dashboard that has crud capabilities and uses an api (in this case, firebase)
 
 ## Build status
-In Progress
+MVP
 
 ## Code Style
 Javascript ES6, Jquery, HTML5, CSS3
@@ -22,12 +22,49 @@ Bootstrap, Firebase, axios
 
 [https://star-destroyer-a0766.web.app](https://star-destroyer-a0766.web.app)
 
+## Screenshots:
+![](https://github.com/nss-evening-cohort-13/star-destroyer-dashboard-star-destroyer-dashboard/blob/development/Weapons%20Dashboard%20Screenshot.png)
+
+![](https://github.com/nss-evening-cohort-13/star-destroyer-dashboard-star-destroyer-dashboard/blob/development/Personnel%20Dashboard%20Screenshot.png)
+
 ## Features
-This site will feature a way to do crud functionality on Weapons, Personel, Sectors, and Enemies
+This site has a way to do crud functionality on Weapons, Personel, Sectors, and Enemies
 
 ## Code Example
 
-n/a
+```
+const getPersonnel = () => new Promise((resolve, reject) => {
+  axios
+    .get(`${baseUrl}/personnel.json`)
+    .then((response) => {
+      const personnel = response.data;
+      const array = [];
+      if (personnel) {
+        Object.keys(personnel).forEach((personnelId) => {
+          array.push(personnel[personnelId]);
+        });
+      }
+      resolve(array);
+    })
+    .catch((error) => reject(error));
+});
+const getSinglePersonnel = (personnelFirebaseKey) => new Promise((resolve, reject) => {
+  axios
+    .get(
+      `${baseUrl}/personnel/${personnelFirebaseKey}.json`
+    )
+    .then((response) => {
+      const thisPersonnel = response.data;
+      resolve(thisPersonnel);
+    }).catch((error) => reject(error));
+});
+const updatePersonnel = (firebaseKey, personnelObject) => axios.patch(`${baseUrl}/personnel/${firebaseKey}.json`, personnelObject);
+const addPersonnel = (data) => axios.post(`${baseUrl}/personnel.json`, data)
+  .then((response) => {
+    const update = { firebaseKey: response.data.name };
+    axios.patch(`${baseUrl}/personnel/${response.data.name}.json`, update);
+  }).catch((error) => console.warn(error));
+```
 
 ## Team
 
