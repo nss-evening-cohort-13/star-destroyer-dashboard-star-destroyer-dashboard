@@ -6,7 +6,8 @@ const getNewWeapon = () => ({
 });
 
 const submitWeapon = () => {
-  $('#weapon-form').on('submit', () => {
+  $('#weapon-form').on('submit', (e) => {
+    e.preventDefault();
     const newWeapon = getNewWeapon();
 
     if (Object.values(newWeapon).includes(false)) {

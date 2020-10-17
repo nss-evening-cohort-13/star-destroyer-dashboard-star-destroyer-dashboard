@@ -6,7 +6,8 @@ const getNewPersonnel = () => ({
 });
 
 const submitPersonnel = () => {
-  $('#personnel-form').on('submit', () => {
+  $('#personnel-form').on('submit', (e) => {
+    e.preventDefault();
     const newPersonnel = getNewPersonnel();
 
     if (Object.values(newPersonnel).includes(false)) {

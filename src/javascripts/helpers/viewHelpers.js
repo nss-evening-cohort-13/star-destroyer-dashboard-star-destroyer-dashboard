@@ -37,8 +37,8 @@ const viewListener = (view, user) => {
     viewHelper('update-personnel-link', user, personnelFirebaseKey);
   });
   $('body').on('click', '.edit-weapons', (e) => {
-    const personnelFirebaseKey = e.currentTarget.id;
-    viewHelper('update-weapons-link', user, personnelFirebaseKey);
+    const weaponsFirebaseKey = e.currentTarget.id;
+    viewHelper('update-weapons-link', user, weaponsFirebaseKey);
   });
   $('body').on('click', '.edit-sectors', (e) => {
     const sectorFirebaseKey = e.currentTarget.id;
