@@ -4,7 +4,7 @@ import forms from '../forms/forms';
 
 const personnelView = () => {
   $('#add-button').html(
-    '<button id="add-personnel" type="button" class="btn btn-dark">Add Personnel +</button>'
+    '<button id="add-personnel" type="button" class="btn btn-dark add-button"><i class="fas fa-plus">Personnel</i></button>'
   );
   $('#add-personnel').on('click', forms.personnelForm);
 

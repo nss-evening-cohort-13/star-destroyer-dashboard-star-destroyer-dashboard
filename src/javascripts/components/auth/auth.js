@@ -29,9 +29,6 @@ const loginButton = () => {
     <li class="nav-item mx-3" id="sectors-link">
       <a class="nav-link" href="#">Planetary Sectors Dashboard</a>
     </li>
-    <li class="nav-item mx-3" id="systems-link">
-      <a class="nav-link" href="#">Planetary Systems Dashboard</a>
-    </li>
   </ul>
       
   <button id="google-auth" class="btn btn-warning btn-lg">

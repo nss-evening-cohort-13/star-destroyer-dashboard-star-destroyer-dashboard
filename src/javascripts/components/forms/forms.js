@@ -16,7 +16,20 @@ const submitPersonnel = () => {
       );
     } else {
       $('#error-message').html('');
-      personnelData.addPersonnel(newPersonnel);
+      personnelData.addPersonnel(newPersonnel)
+        .then(() => {
+          $('#success-message').html(
+            '<div class="alert alert-success" role="alert">Your Personnel Was Added!</div>'
+          );
+
+          setTimeout(() => {
+            $('#success-message').html('');
+          }, 3000);
+        })
+        .catch((error) => console.warn(error));
+
+      $('#personnel-name').val('');
+      $('#personnel-img-url').val('');
     }
   });
 };
@@ -26,6 +39,7 @@ const personnelForm = () => {
   <div id="personnel-form">
     <h1>Personnel Form<h1>
     <div id="error-message"></div>
+    <div id="success-message"></div>
     <form>
       <div class="form-group">
         <label for="personnel-name">Name:</label>

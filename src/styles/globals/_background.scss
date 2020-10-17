@@ -1,4 +1,8 @@
 $backgroundIMG: url('../../images/star-destroyer.png');
+@font-face {
+  font-family: 'Jedi';
+  src: url('starjedi_Starjedi.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
 
 body { 
     background: $backgroundIMG no-repeat center center fixed; 
@@ -6,4 +10,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    font-family: 'Jedi';
   }
+
+ 

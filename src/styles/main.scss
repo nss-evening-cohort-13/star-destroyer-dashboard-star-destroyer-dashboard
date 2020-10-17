@@ -53,10 +53,22 @@ body {
   justify-content: space-around;
 }
 
-.personnel {
-  padding-top: 30px;
-}
-
 .selected {
   font-weight: bold;
 }
+
+#weapons-link > a:hover, #personnel-link > a:hover, #enemies-link > a:hover,
+#sectors-link > a:hover {
+   color: #0066CC;
+ }
+
+ .add-button {
+  margin-right: 10px;
+  font-size: 10px;
+  padding: 5px;
+ }
+
+ #update-personnel-form, #update-weapons-form, #update-sector-form, #update-enemy-form,
+ #personnel-form, #weapon-form, #sector-form, #enemy-form {
+   color: #fff;
+ } 
