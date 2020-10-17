@@ -32,6 +32,8 @@ const getAllSectors = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
+const updateSector = (firebaseKey, sectorObject) => axios.patch(`${baseUrl}/planetarySectors/${firebaseKey}.json`, sectorObject);
+
 const addSector = (data) => axios.post(`${baseUrl}/planetarySectors.json`, data)
   .then((response) => {
     const update = { firebaseKey: response.data.name };
@@ -42,5 +44,6 @@ export default {
   deleteSector,
   getSingleSector,
   getAllSectors,
-  addSector
+  addSector,
+  updateSector
 };

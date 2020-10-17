@@ -7,7 +7,8 @@ const getNewSector = () => ({
 });
 
 const submitSector = () => {
-  $('#sector-form').on('submit', () => {
+  $('#sector-form').on('submit', (e) => {
+    e.preventDefault();
     const newSector = getNewSector();
 
     if (Object.values(newSector).includes(false)) {
