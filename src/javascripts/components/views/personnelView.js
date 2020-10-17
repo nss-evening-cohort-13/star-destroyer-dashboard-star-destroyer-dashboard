@@ -1,6 +1,6 @@
 import personnelData from '../../helpers/data/personnelData';
 import card from '../cards/personnelCards';
-import forms from '../forms';
+import forms from '../forms/forms';
 
 const personnelView = () => {
   $('#add-button').html(
