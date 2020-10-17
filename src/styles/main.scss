@@ -53,10 +53,34 @@ body {
   justify-content: space-around;
 }
 
-.personnel {
+.personnel, .weapons, .sectors, .enemies {
   padding-top: 30px;
 }
 
 .selected {
   font-weight: bold;
 }
+
+img { clip-path: polygon(0% 15%, 15% 15%, 37% 0, 61% 0, 85% 15%, 100% 15%, 100% 92%, 85% 92%, 64% 78%, 38% 78%, 16% 93%, 0 94%);
+}
+
+.card {
+ border: 1px solid #0066CC;
+ text-shadow: 0 -1px 0 rgba(0, 51, 102, 0.3), 0 2px 1px #b2d8ff, 0 0 5px #99ddff, 0 0 20px rgba(0, 127, 255, 0.6);
+}
+
+#weapons-link > a:hover, #personnel-link > a:hover, #enemies-link > a:hover,
+#sectors-link > a:hover {
+   color: #0066CC;
+ }
+
+ .add-button {
+  margin-right: 10px;
+  font-size: 10px;
+  padding: 5px;
+ }
+
+ #update-personnel-form, #update-weapons-form, #update-sector-form, #update-enemy-form,
+ #personnel-form, #weapon-form, #sector-form, #enemy-form {
+   color: #fff;
+ } 
