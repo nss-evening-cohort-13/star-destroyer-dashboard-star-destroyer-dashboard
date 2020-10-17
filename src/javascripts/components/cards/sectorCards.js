@@ -11,7 +11,7 @@ const sectorCard = (object) => {
   }
 
   const domString = $('#app').append(`
-    <div class="weapons" id="sectors-${object.firebaseKey}">
+    <div class="sectors" id="sectors-${object.firebaseKey}">
   <div class="card" style="width: 18rem;">
       <h5 class="card-title" id="name">${object.name}</h5>
     ${buttons}
