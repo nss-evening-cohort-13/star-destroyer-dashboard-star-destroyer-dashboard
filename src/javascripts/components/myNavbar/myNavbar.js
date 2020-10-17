@@ -36,10 +36,7 @@ const myNavbar = () => {
     <li class="nav-item mx-3" id="sectors-link">
       <a class="nav-link" href="#">Planetary Sectors Dashboard</a>
     </li>
-    <li class="nav-item mx-3" id="systems-link">
-      <a class="nav-link" href="#">Planetary Systems Dashboard</a>
-    </li>
-  </ul>
+    </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <button class="nav-link btn btn-danger p-2" id="navbar-logout-button">Logout</button>
