@@ -3,6 +3,8 @@ import apiKeys from '../apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
+const deleteSector = (firebaseKey) => axios.delete(`${baseUrl}/planetarySectors/${firebaseKey}.json`);
+
 const getSingleSector = (sectorFirebaseKey) => new Promise((resolve, reject) => {
   axios
     .get(
@@ -30,4 +32,4 @@ const getAllSectors = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export default { getSingleSector, getAllSectors };
+export default { deleteSector, getSingleSector, getAllSectors };
