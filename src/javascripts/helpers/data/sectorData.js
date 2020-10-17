@@ -30,4 +30,10 @@ const getAllSectors = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export default { getSingleSector, getAllSectors };
+const addSector = (data) => axios.post(`${baseUrl}/planetarySectors.json`, data)
+  .then((response) => {
+    const update = { firebaseKey: response.data.name };
+    axios.patch(`${baseUrl}/planetarySectors/${response.data.name}.json`, update);
+  }).catch((error) => console.warn(error));
+
+export default { getSingleSector, getAllSectors, addSector };
