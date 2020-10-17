@@ -5,7 +5,7 @@
 The motivation behind this project is to mock up a dashboard that has crud capabilities and uses an api (in this case, firebase)
 
 ## Build status
-In Progress
+MVP
 
 ## Code Style
 Javascript ES6, Jquery, HTML5, CSS3
@@ -22,8 +22,13 @@ Bootstrap, Firebase, axios
 
 [https://star-destroyer-a0766.web.app](https://star-destroyer-a0766.web.app)
 
+## Screenshots:
+![](https://github.com/nss-evening-cohort-13/star-destroyer-dashboard-star-destroyer-dashboard/blob/development/Weapons%20Dashboard%20Screenshot.png)
+
+![](https://github.com/nss-evening-cohort-13/star-destroyer-dashboard-star-destroyer-dashboard/blob/development/Personnel%20Dashboard%20Screenshot.png)
+
 ## Features
-This site will feature a way to do crud functionality on Weapons, Personel, Sectors, and Enemies
+This site has a way to do crud functionality on Weapons, Personel, Sectors, and Enemies
 
 ## Code Example
 
