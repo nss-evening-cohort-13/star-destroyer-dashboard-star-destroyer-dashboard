@@ -4,7 +4,7 @@ import forms from '../forms/sectorsForm';
 
 const sectorView = () => {
   $('#add-button').html(
-    '<button id="add-sector" type="button" class="btn btn-dark">Add Sector +</button>'
+    '<button id="add-sector" type="button" class="btn btn-dark"><i class="fas fa-plus"></i></button>'
   );
   $('#add-sector').on('click', forms.sectorForm);
 

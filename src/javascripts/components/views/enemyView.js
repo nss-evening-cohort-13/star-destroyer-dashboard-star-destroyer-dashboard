@@ -4,7 +4,7 @@ import forms from '../forms/enemyForm';
 
 const enemyView = () => {
   $('#add-button').html(
-    '<button id="add-enemies" type="button" class="btn btn-dark">Add Enemy +</button>'
+    '<button id="add-enemies" type="button" class="btn btn-dark"><i class="fas fa-plus"></i></button>'
   );
   $('#add-enemies').on('click', forms.enemyForm);
 

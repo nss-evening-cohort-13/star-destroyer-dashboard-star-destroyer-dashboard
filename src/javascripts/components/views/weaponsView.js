@@ -4,7 +4,7 @@ import weaponsForm from '../forms/weaponsForm';
 
 const weaponsView = () => {
   $('#add-button').html(
-    '<button id="add-weapon" type="button" class="btn btn-dark">Add Weapons +</button>'
+    '<button id="add-weapon" type="button" class="btn btn-dark"><i class="fas fa-plus"></i></button>'
   );
   $('#add-weapon').on('click', weaponsForm.weaponForm);
 
