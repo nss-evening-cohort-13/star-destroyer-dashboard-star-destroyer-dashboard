@@ -28,5 +28,65 @@
     "firebaseKey" : "-MJONCKcLCCIi8Yxi1E5",
     "image" : "https://lumiere-a.akamaihd.net/v1/images/Jabba-The-Hutt_b5a08a70.jpeg?region=0%2C0%2C1200%2C675",
     "name" : "Jabba The Hut"
+  },
+  "-MJnqZQ7bphKxMAKp79B" : {
+    "firebaseKey" : "-MJnqZQ7bphKxMAKp79B",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/General-Grievous_c9df9cb5.jpeg?region=0%2C0%2C1200%2C675",
+    "name" : "General Grievous"
+  },
+  "-MJnqrT1W1Ou2pCTyWUg" : {
+    "firebaseKey" : "-MJnqrT1W1Ou2pCTyWUg",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/databank_lokdrud_01_169_7a169264.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "Lok Durd"
+  },
+  "-MJnr2atmzxmCdyq_S7X" : {
+    "firebaseKey" : "-MJnr2atmzxmCdyq_S7X",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/knights-of-ren-main_17fe248a.jpeg?region=0%2C0%2C1281%2C720",
+    "name" : "Knights of Ren"
+  },
+  "-MJnrESMP2JdjjP_pRTh" : {
+    "firebaseKey" : "-MJnrESMP2JdjjP_pRTh",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/image_be200df2.jpeg?region=0%2C0%2C1920%2C1080&width=1536",
+    "name" : "Yogar Lyste"
+  },
+  "-MJnrWox1mcK-gXY4nC_" : {
+    "firebaseKey" : "-MJnrWox1mcK-gXY4nC_",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/orson-krennic_4c6477e2.jpeg?region=0%2C119%2C1560%2C879&width=1536",
+    "name" : "Director Orson Krennic"
+  },
+  "-MJnrdDQLgbktGRMaGaG" : {
+    "firebaseKey" : "-MJnrdDQLgbktGRMaGaG",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/death-troopers-main_dd93335e.jpeg?region=307%2C29%2C809%2C455",
+    "name" : "Imperial Death Troopers"
+  },
+  "-MJnrvwocnSZbLOpQVVf" : {
+    "firebaseKey" : "-MJnrvwocnSZbLOpQVVf",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/copy_of_second_sister_-_approved_bd_villainsscreenshots_b722756c.jpeg?region=0%2C0%2C1280%2C720",
+    "name" : "Second Sister"
+  },
+  "-MJnvEaJjeeTisbBKpc_" : {
+    "firebaseKey" : "-MJnvEaJjeeTisbBKpc_",
+    "image" : "https://img1.looper.com/img/gallery/the-real-reason-kylo-ren-has-a-new-helmet-in-rise-of-skywalker/intro-1576774119.jpg",
+    "name" : "Kylo Ren"
+  },
+  "-MJoFbrG4dkv3TpZMuHn" : {
+    "firebaseKey" : "-MJoFbrG4dkv3TpZMuHn",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/admiral-griss-main_d6144ea9.jpeg?region=137%2C42%2C1143%2C643",
+    "name" : "Admiral Griss"
+  },
+  "-MJoFrAkvp5SUzEiHmau" : {
+    "firebaseKey" : "-MJoFrAkvp5SUzEiHmau",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/databank_admiralmotti_01_169_f01d2570.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "Admiral Motti"
+  },
+  "-MJoG2UXr4Ccf31ZlauD" : {
+    "firebaseKey" : "-MJoG2UXr4Ccf31ZlauD",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/admiral-trench-main_8da89427.jpeg?region=144%2C0%2C967%2C544",
+    "name" : "Admiral Trench"
+  },
+  "-MJoGOUz_f07Pl8MHfiz" : {
+    "firebaseKey" : "-MJoGOUz_f07Pl8MHfiz",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/first-order-tie-fighter-pilots_a040dfc7.jpeg?region=251%2C0%2C1561%2C878&width=1536",
+    "name" : "First Order Tie Fighter Pilot"
   }
 }

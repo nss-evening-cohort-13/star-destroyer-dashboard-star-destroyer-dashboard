@@ -1,23 +1,117 @@
 {
-    "-MJOPMh6PGvjfnuwWHRd" : {
-      "firebaseKey" : "-MJOPMh6PGvjfnuwWHRd",
-      "image" : "https://vignette.wikia.nocookie.net/starwars/images/c/c9/ATAT-SWFB.jpg/revision/latest?cb=20170825050424",
-      "name" : "AT-AT"
-    },
-    "-MJOT_EHbKzDN04v137n" : {
-      "firebaseKey" : "-MJOT_EHbKzDN04v137n",
-      "image" : "https://vignette.wikia.nocookie.net/starwars/images/9/9f/DH-17_Blaster_DICE.png/revision/latest?cb=20151106045937",
-      "name" : "Blaster Pistol"
-    },
-    "-MJOZLk9BujT944TVN1j" : {
-        "firebaseKey" : "-MJOT_EHbKzDN04v137n",
-        "image" : "https://images-na.ssl-images-amazon.com/images/I/41506V73oML._AC_SL1000_.jpg",
-        "name" : "Blue Light Saber"
-    },
-    "-MJOZu_F-LRNKRPFL-5i" : {
-      "firebaseKey" : "-MJOZu_F-LRNKRPFL-5i",
-      "image" : "https://vignette.wikia.nocookie.net/starwars/images/a/ae/Landos_Millennium_Falcon.png/revision/latest?cb=20190613053952",
-      "name" : "Millenium Falcon"
-    }
+  "-MJnh4eKimd1fP9XGsh5" : {
+    "firebaseKey" : "-MJnh4eKimd1fP9XGsh5",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/last-jedi-databank-vibro-voulge-main-image_14f33fbe.jpeg?region=51%2C0%2C951%2C536",
+    "name" : "Vibro-Voulge"
+  },
+  "-MJnhP52G-AWIEHHrVls" : {
+    "firebaseKey" : "-MJnhP52G-AWIEHHrVls",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/lord-corvax-s-lioghtsaber-main_75d03768.jpeg?region=0%2C0%2C1280%2C720",
+    "name" : "Lord Corvax's Lightsaber"
+  },
+  "-MJniOjXeCt88WXWfgOo" : {
+    "firebaseKey" : "-MJniOjXeCt88WXWfgOo",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/ushars-war-club-main_5f8cddfe.jpeg?region=0%2C0%2C1280%2C720",
+    "name" : "War Club"
+  },
+  "-MJnib8KI1BvEHcSd2mB" : {
+    "firebaseKey" : "-MJnib8KI1BvEHcSd2mB",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/ion-blaster_62b30531.jpeg?region=0%2C83%2C1560%2C874&width=1536",
+    "name" : "Ion Blaster"
+  },
+  "-MJnivgrV6QEfCWdzlwU" : {
+    "firebaseKey" : "-MJnivgrV6QEfCWdzlwU",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/finalizer_9c490246.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "Finalizer"
+  },
+  "-MJnjTBsH1kKq1wC_kFn" : {
+    "firebaseKey" : "-MJnjTBsH1kKq1wC_kFn",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/Death-Star-I-copy_36ad2500.jpeg?region=0%2C0%2C1600%2C900&width=1536",
+    "name" : "Death Star"
+  },
+  "-MJnjcBniDtGz0csnYY9" : {
+    "firebaseKey" : "-MJnjcBniDtGz0csnYY9",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/ion-cannon_af46d6df.jpeg?region=191%2C0%2C1179%2C663",
+    "name" : "Ion Cannon"
+  },
+  "-MJnjtpSYpj7qXSSt5-g" : {
+    "firebaseKey" : "-MJnjtpSYpj7qXSSt5-g",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/solo-db-snubble-pistol-main-image_7e535067.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "Snubble Pistol"
+  },
+  "-MJnkFv96hmSHn949C9_" : {
+    "firebaseKey" : "-MJnkFv96hmSHn949C9_",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/self-propelled-heavy-artillery-turbolaser_1d69d1e5.jpeg?region=0%2C0%2C1560%2C880&width=1536",
+    "name" : "Self-Propelled Heavy Artillery Turbolaser"
+  },
+  "-MJnkavZ265BIQp6Y3_6" : {
+    "firebaseKey" : "-MJnkavZ265BIQp6Y3_6",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/seismic-charge_0d585f31.jpeg?region=192%2C0%2C1175%2C661",
+    "name" : "Seismic Charge"
+  },
+  "-MJnlSw_Kmf6DLcbos0S" : {
+    "firebaseKey" : "-MJnlSw_Kmf6DLcbos0S",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/databank_thermaldetonator_01_169_263981fd.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "Thermal Detonator"
+  },
+  "-MJnliHf5v7yfxsEdVV0" : {
+    "firebaseKey" : "-MJnliHf5v7yfxsEdVV0",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/anti-air-turbolaser-tower_0917f829.jpeg?region=0%2C0%2C768%2C432",
+    "name" : "Anti-Air Turbolaser Tower"
+  },
+  "-MJnluNY9fgFxI8Rezta" : {
+    "firebaseKey" : "-MJnluNY9fgFxI8Rezta",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/databank_forcelightning_01_169_b1eb5a6f.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "Force Lightening"
+  },
+  "-MJoIoH-8JGSAPg-HSz5" : {
+    "firebaseKey" : "-MJoIoH-8JGSAPg-HSz5",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/AT-AT_89d0105f.jpeg?region=214%2C19%2C1270%2C716",
+    "name" : "AT-AT Walker"
+  },
+  "-MJoJJxJ6PQMJMDovzyv" : {
+    "firebaseKey" : "-MJoJJxJ6PQMJMDovzyv",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/databank_arc170starfighter_01_169_f932abcb.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "Arc-170 Starfighter"
+  },
+  "-MJoJkWnLvdOFfs1BAbz" : {
+    "firebaseKey" : "-MJoJkWnLvdOFfs1BAbz",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/databank_barcspeeder_01_169_5fd4ce29.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "Barc Speeder"
+  },
+  "-MJoK03iLQiTyWkLYlp6" : {
+    "firebaseKey" : "-MJoK03iLQiTyWkLYlp6",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/databank_executor_01_169_8157df82.jpeg?region=57%2C0%2C1503%2C845",
+    "name" : "Executor"
+  },
+  "-MJoKENJRlRCNZP37vyx" : {
+    "firebaseKey" : "-MJoKENJRlRCNZP37vyx",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/first-order-special-forces-tie-fighter_544db559.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "First Order Special Forces Tie Fighter"
+  },
+  "-MJoKr3nZXw8oMRT6t4q" : {
+    "firebaseKey" : "-MJoKr3nZXw8oMRT6t4q",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/solo-db-kyuzo-petars-main-image_8113ba99.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "Kyuzo Petars"
+  },
+  "-MJoLC2ewr79RIb7Hqzr" : {
+    "firebaseKey" : "-MJoLC2ewr79RIb7Hqzr",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/the-decimator-main_706edb34.jpeg?region=311%2C1%2C969%2C544",
+    "name" : "The Decimator"
+  },
+  "-MJoLREizGX_QR6A_zmA" : {
+    "firebaseKey" : "-MJoLREizGX_QR6A_zmA",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/tie-whisper_ec973722.jpeg?region=0%2C0%2C1280%2C720",
+    "name" : "Kylo Ren's Modified Tie Whisper"
+  },
+  "-MJoLsv6W0juUOoH8zEt" : {
+    "firebaseKey" : "-MJoLsv6W0juUOoH8zEt",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/conveyex-main_11f86558.jpeg?region=1%2C0%2C1198%2C674",
+    "name" : "Conveyex"
+  },
+  "-MJoMFkIKZ-3viC2yt15" : {
+    "firebaseKey" : "-MJoMFkIKZ-3viC2yt15",
+    "image" : "https://lumiere-a.akamaihd.net/v1/images/corvus_433bd0f7.jpeg?region=0%2C0%2C1560%2C878&width=1536",
+    "name" : "Corvus"
   }
-  
+}

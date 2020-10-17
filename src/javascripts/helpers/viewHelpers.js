@@ -4,6 +4,7 @@ import updateWeaponsView from '../components/views/updateWeaponsView';
 import weaponsView from '../components/views/weaponsView';
 import sectorView from '../components/views/sectorView';
 import updateSectorView from '../components/views/updateSectorsView';
+import enemyView from '../components/views/enemyView';
 
 /* Logged On Resources */
 const viewHelper = (id, object, arg) => {
@@ -22,6 +23,8 @@ const viewHelper = (id, object, arg) => {
       return sectorView.sectorView(object);
     case 'update-sector-link':
       return updateSectorView.updateSectorView(arg);
+    case 'enemies-link':
+      return enemyView.enemyView(object);
     default:
       return console.warn(id, 'page');
   }
