@@ -32,6 +32,8 @@ const getSingleEnemy = (enemiesFirebaseKey) => new Promise((resolve, reject) => 
     }).catch((error) => reject(error));
 });
 
+const updateEnemy = (firebaseKey, enemyObject) => axios.patch(`${baseUrl}/enemies/${firebaseKey}.json`, enemyObject);
+
 const addEnemy = (data) => axios.post(`${baseUrl}/enemies.json`, data)
   .then((response) => {
     const update = { firebaseKey: response.data.name };
@@ -41,6 +43,7 @@ const addEnemy = (data) => axios.post(`${baseUrl}/enemies.json`, data)
 export default {
   deleteEnemies,
   getEnemies,
+  updateEnemy,
   addEnemy,
   getSingleEnemy
 };

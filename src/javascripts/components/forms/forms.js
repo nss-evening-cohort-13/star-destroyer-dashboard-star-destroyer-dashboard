@@ -1,4 +1,4 @@
-import personnelData from '../helpers/data/personnelData';
+import personnelData from '../../helpers/data/personnelData';
 
 const getNewPersonnel = () => ({
   name: $('#personnel-name').val() || false,
