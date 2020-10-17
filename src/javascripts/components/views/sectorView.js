@@ -1,7 +1,13 @@
 import sectorData from '../../helpers/data/sectorData';
 import card from '../cards/sectorCards';
+import forms from '../forms/sectorsForm';
 
 const sectorView = () => {
+  $('#add-button').html(
+    '<button id="add-sector" type="button" class="btn btn-dark">Add Sector +</button>'
+  );
+  $('#add-sector').on('click', forms.sectorForm);
+
   $('#app').html('');
   sectorData.getAllSectors().then((response) => {
     if (response.length) {
