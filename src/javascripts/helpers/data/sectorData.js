@@ -30,4 +30,6 @@ const getAllSectors = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export default { getSingleSector, getAllSectors };
+const updateSector = (firebaseKey, sectorObject) => axios.patch(`${baseUrl}/planetarySectors/${firebaseKey}.json`, sectorObject);
+
+export default { getSingleSector, getAllSectors, updateSector };

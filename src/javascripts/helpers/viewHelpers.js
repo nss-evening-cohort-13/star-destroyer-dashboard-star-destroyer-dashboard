@@ -3,6 +3,7 @@ import updatePersonnelView from '../components/views/updatePersonnelView';
 import updateWeaponsView from '../components/views/updateWeaponsView';
 import weaponsView from '../components/views/weaponsView';
 import sectorView from '../components/views/sectorView';
+import updateSectorView from '../components/views/updateSectorsView';
 
 /* Logged On Resources */
 const viewHelper = (id, object, arg) => {
@@ -19,6 +20,8 @@ const viewHelper = (id, object, arg) => {
       return weaponsView.weaponsView(object);
     case 'sectors-link':
       return sectorView.sectorView(object);
+    case 'update-sector-link':
+      return updateSectorView.updateSectorView(arg);
     default:
       return console.warn(id, 'page');
   }
@@ -36,6 +39,10 @@ const viewListener = (view, user) => {
   $('body').on('click', '.edit-weapons', (e) => {
     const personnelFirebaseKey = e.currentTarget.id;
     viewHelper('update-weapons-link', user, personnelFirebaseKey);
+  });
+  $('body').on('click', '.edit-sectors', (e) => {
+    const sectorFirebaseKey = e.currentTarget.id;
+    viewHelper('update-sector-link', user, sectorFirebaseKey);
   });
 };
 
