@@ -120,23 +120,29 @@ Lord Vader was most displeased with the lack of progress from the original team,
 **Stretch goal:** Mission Logs
 ## Week 2 User Stories
 #### Missions
-* As a user, I should be able to view all Missions.
-* As a user, I should be able to add a Mission.
-* As a user, I should be able to edit a Mission.
-* As a user, I should be able to delete a Mission.
-* As a user, I should be able to add Personnel to a Mission.
-* As a user, I should be able to edit Mission Personnel.
-* As a user, I should be able to delete Mission Personnel.
-* As a user, I should be able to add Weapons to a Mission.
-* As a user, I should be able to edit Mission Weapons.
-* As a user, I should be able to delete Mission Weapons.
-* As a user, I should be able to add a Planetary System to a Mission.
-* As a user, I should be able to edit a Mission Planetary System.
-* As a user, I should be able to delete a Mission Planetary System.
-* As a user, I should be able to add an Enemy target to a Mission.
-* As a user, I should be able to edit a Mission Enemy target.
-* As a user, I should be able to delete an Enemy Mission target.
-* As a user, when I select a Mission I should be able to view all Personnel, Weapons, Planetary Systems and Enemy targets associated with that Mission.
+1. As a user, I should be able to view all Missions.
+2. As a user, I should be able to add a Mission.
+3. As a user, I should be able to edit a Mission.
+4. As a user, I should be able to delete a Mission.
+5. As a user, I should be able to add Personnel to a Mission.
+6. As a user, I should be able to edit Mission Personnel.
+7. As a user, I should be able to delete Mission Personnel.
+8. As a user, I should be able to add Weapons to a Mission.
+9. As a user, I should be able to edit Mission Weapons.
+10. As a user, I should be able to delete Mission Weapons.
+11. As a user, I should be able to add a Planetary System to a Mission.
+12. As a user, I should be able to edit a Mission Planetary System.
+13. As a user, I should be able to delete a Mission Planetary System.
+14. As a user, I should be able to add an Enemy target to a Mission.
+15. As a user, I should be able to edit a Mission Enemy target.
+16. As a user, I should be able to delete an Enemy Mission target.
+17. As a user, when I select a Mission I should be able to view all Personnel, Weapons, Planetary Systems and Enemy targets associated with that Mission.
+18. As a user, when clicking on a Planetary Sector, I should be able to view all Planetary Systems within that sector.
+19. As a user, I should be able to view all the Planetary Systems.
+20. As a user, I should be able to add a Planetary System.
+21. As a user, I should be able to edit a Planetary System (change name, which sector it belongs to)
+22. As a user, I should be able to delete a Planetary System.
+
 ### Stretch Goals
 #### Mission Logs
 * As a user, I should be able to view all Mission Logs.
